@@ -122,3 +122,25 @@ You can make the following assumptions:
 There will only be 4 cells per row.
 There will be no escaped characters other than “\n”.
 */
+//   A)
+const csvData = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26`;
+
+//                          split the CSV string into rows where '\n'
+const rows = csvData.split('\n');
+
+//                          allow an empty arrray to hold all the data
+let dataArray = [];
+
+//                           go through each row one by one
+for (let i = 0; i < rows.length; i++) {
+    //                       use commas to split each row into columns (',')
+    const columns = rows[i].split(',');
+    //                       add the array of columns to the main data array
+    dataArray.push(columns);
+}
+
+//                          output the array to console
+console.log(dataArray);
+
+
+// B)
