@@ -185,9 +185,9 @@ for (let i = 1; i <= 100; i++){
   }
   
   // Part 2 Prime Time 
-  let n = 89
+  let p = 89
   let foundPrime = false
-  let i = n + 1
+  let i = p + 1
   let nextPrime;
   
   outerLoop: while (!foundPrime) {
